@@ -29,7 +29,7 @@ public class RunExternal : MonoBehaviour
     {
         string path = Application.persistentDataPath + "\\Games\\", gameName = getGameName();
 
-        Process.Start(path + gameName + gameName + ".exe");
+        Process.Start(path + gameName + "\\" + gameName + ".exe");
         Application.Quit();
     }
 
