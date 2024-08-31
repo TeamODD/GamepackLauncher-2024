@@ -27,7 +27,7 @@ public class RunExternal : MonoBehaviour
 
     public void onClick()
     {
-        string path = Application.persistentDataPath + "\\Games\\", gameName = getGameName();
+        string path = Application.dataPath + "\\Games\\", gameName = getGameName();
 
         Process.Start(path + gameName + "\\" + gameName + ".exe");
         Application.Quit();
